@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    .rad{
+        accent-color: rgb(91, 172, 223);
+        transform: scale(1.1);
+    }
+</style>
+<body>
+    <section class="outline-2 outline-blue-300 rounded-lg h-[610px] w-[600px] m-auto mt-3  shadow-xl p-4 shadow-black">
+<div>
+    <img src="school.png" class="h-20 p-3" alt="">
+    <p class="font-bold text-2xl text-center text-blue-300 underline">ADMISSION FORM</p>
+</div>
+<div>
+   <form action="" onsubmit="showalert()" class="">
+    <div>  <label for="" class="text-blue-300 ">First  Name:</label>
+    <input type="name" id="name" required class="outline-none  focus:ring-2 focus:ring-blue-500 border-blue-300 border-2 mt-3 rounded-lg p-1"></div>
+  <div> <label for="" class="text-blue-300">Last  Name:</label>
+    <input type="name" id="name" required class="outline-none  focus:ring-2 focus:ring-blue-500 border-blue-300 border-2 mt-4  rounded-lg p-1"></div>
+   
+   <div> <label for="" class="text-blue-300">Email:</label>
+    <input type="Email" id="email" required class="outline-none  focus:ring-2 focus:ring-blue-500 border-blue-300 border-2  rounded-lg p-1 mt-4"></div>
+    <div>
+         <label for="" class="text-blue-300">Phone No:</label>
+        <input type="tel" id="num" required class="outline-none  focus:ring-2 focus:ring-blue-500 border-blue-300 border-2 rounded-lg p-1 mt-4"></div>
+       <div><label for="" class="text-blue-300">Course:</label>
+              <select name="Course" id="course" class="mt-4 text-white p-2 outline-none rounded-md bg-blue-400 font-bold">
+                 <option value="Information Technology" >Information Technology</option>
+                 <option value="Computer Science">Computer Science</option>
+                 <option value="Artificial Intelligence">Artificial Intelligence</option>
+
+              </select>
+    </div>
+    <div class="flex gap-2 mt-4">
+        <label for="" class="text-blue-300">Gender:</label>
+        <input type="radio" id="gen" class="rad">
+        <p class="text-blue-300 ">Female</p>
+          <input type="radio" id="gen" class="rad">
+        <p class="text-blue-300 ">Male</p>
+    </div>
+    <div class="">
+             <p class="text-blue-300 mt-4">Address:</p>
+          <textarea name="Address" id="text" row="8" cols="50" class="p-2 mt-1 outline-none  focus:ring-2 focus:ring-blue-500 border-blue-300 border-2  rounded-lg"></textarea>
+    </div >
+    <input type="submit"  class="hover:text-blue-300 font-bold hover:outline-2 mt-3 hover:outline-blue-300 hover:bg-white rounded-lg p-2 shadow-lg shadow-blue-400  w-30 text-white bg-blue-400">
+    
+        
+   </form>
+</div>
+    </section>
+ 
+<script>
+function showalert(){
+   
+alert("Form Submit Successfully! 🎉")
+}
+</script>
+
+
+
+
+
+
+</body>
+</html>
